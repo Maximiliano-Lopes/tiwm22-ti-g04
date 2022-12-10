@@ -1,0 +1,8 @@
+body{
+    background-image: url("/src/images/background-ocean.png");
+    margin: 0;
+    padding: 0;
+}
+#LogoImg img{
+    width: 550px;
+}
