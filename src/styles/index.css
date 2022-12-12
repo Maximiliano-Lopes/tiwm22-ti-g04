@@ -1,126 +1,177 @@
-body{
-    background-image: url("../images/background-ocean.png");
-    margin: 0;
-    padding: 0;
-    font-family: 'Handlee', cursive;
-    font-family: 'Urbanist', sans-serif;
-    color: #002960;
+body {
+  background-image: url("../images/background-ocean.png");
+  margin: 0;
+  padding: 0;
+  font-family: "Handlee", cursive;
+  font-family: "Urbanist", sans-serif;
+  color: #002960;
 }
-#LogoImg img{
-    width: 550px;
+#LogoImg img {
+  width: 550px;
 }
-a{
+a {
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #002960;
+  text-decoration: none;
+  padding-right: 2vw;
+  font-size: 30pt;
+  text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+}
+#TopBar section {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -10%;
+}
+#CardArea {
+  max-width: 510px;
+  background-color: rgba(255, 255, 255, 0.103);
+  padding: 5px 50px 50px 50px;
+  margin-left: 5vw;
+  margin-top: -5vh;
+  border-radius: 30px;
+  box-shadow: rgba(255, 255, 255, 0.082) 5px 5px 1px;
+}
+#CardArea p {
+  margin-top: -35px;
+  font-size: 28pt;
+  font-weight: bolder;
+  text-align: justify;
+  text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+}
+#CardArea span {
+  margin-top: -35px;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 26.5pt;
+  text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+}
+#CardArea h1 {
+  font-size: 60pt;
+  font-weight: bolder;
+  text-shadow: rgba(255, 255, 255, 0.671) 6px 3px 1px;
+}
+strong {
+  color: #003477;
+  text-shadow: rgba(170, 170, 170, 0.671) 1px 1px 1px;
+}
+@-webkit-keyframes bloob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes bloob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes bloob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes bloob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+#BotaoBaleiaAzul {
+  -webkit-animation-name: bob-float, bloob;
+  animation-name: bob-float, bloob;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.2s, 3s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+
+  background-color: rgba(255, 255, 255, 0.288);
+  position: absolute;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 25pt;
+  margin-left: 12%;
+  margin-top: 2%;
+}
+@media screen and (min-width: 1500px) {
+  #LogoImg img {
+    width: 450px;
+  }
+  a {
     font-weight: 800;
     letter-spacing: -1px;
     color: #002960;
     text-decoration: none;
     padding-right: 2vw;
-    font-size: 30pt;
-    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px ;
-    
-}
-#TopBar section{
+    font-size: 25pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+  }
+  #TopBar section {
     position: absolute;
     margin-left: 35%;
     margin-top: -10%;
-    
-}
-#CardArea{
-    max-width: 510px;
+  }
+  #CardArea {
+    max-width:400px;
     background-color: rgba(255, 255, 255, 0.103);
     padding: 5px 50px 50px 50px;
     margin-left: 5vw;
-    margin-top: -5vh;
+    margin-top: -6vh;
     border-radius: 30px;
     box-shadow: rgba(255, 255, 255, 0.082) 5px 5px 1px;
-}
-#CardArea p{
+  }
+  #CardArea p {
     margin-top: -35px;
-    font-size: 28pt;
+    font-size: 22pt;
     font-weight: bolder;
     text-align: justify;
-    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px ;
-}
-#CardArea span{
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+  }
+  #CardArea span {
     margin-top: -35px;
     position: absolute;
     font-weight: bolder;
-    font-size: 26.5pt;
-    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px ;
-}
-#CardArea h1{
-    font-size: 60pt;
+    font-size: 22pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+  }
+  #CardArea h1 {
+    font-size: 40pt;
     font-weight: bolder;
-    text-shadow: rgba(255, 255, 255, 0.671) 6px 3px 1px ;
-}
-strong{
+    text-shadow: rgba(255, 255, 255, 0.671) 6px 3px 1px;
+  }
+  strong {
     color: #003477;
-    text-shadow: rgba(170, 170, 170, 0.671) 1px 1px 1px ;
+    text-shadow: rgba(170, 170, 170, 0.671) 1px 1px 1px;
+  }
+  #BotaoBaleiaAzul { 
+    margin-left: 8.5%;
+  }
+
 }
-@-webkit-keyframes bloob {
-    0% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-    50% {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
-    }
-    100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-  }
-  @keyframes bloob {
-    0% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-    50% {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
-    }
-    100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-  }
-  @-webkit-keyframes bloob-float {
-    100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-  }
-  @keyframes bloob-float {
-    100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-}
-
-#BotaoBaleiaAzul{
-    -webkit-animation-name: bob-float, bloob;
-    animation-name: bob-float, bloob;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .2s, 3s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
-
-    background-color: rgba(255, 255, 255, 0.288);
-    position: absolute;
-    border-radius: 10px;
-    padding: 5px 10px;
-    font-size: 25pt;
-    margin-left: 12%;
-    margin-top: 2%;
-  }
-
-  
