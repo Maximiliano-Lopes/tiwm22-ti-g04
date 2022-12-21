@@ -6,6 +6,8 @@ body {
   font-family: "Urbanist", sans-serif;
   color: #002960;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 main {
   display: flex;
@@ -70,6 +72,7 @@ nav ul {
   background-color: rgba(255, 255, 255, 0.103);
   padding: 5px 50px 50px 50px;
   margin-left: -50vw;
+  margin-right: 10vw;
   margin-top: -5vh;
   border-radius: 30px;
 
@@ -183,4 +186,557 @@ strong {
   font-weight: 800;
   letter-spacing: -1px;
   color: #0d4691;
+}
+
+.slider {
+  -webkit-animation-name: bob-float, bloob;
+  animation-name: bob-float, bloob;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.2s, 3s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.1s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+
+  margin-top: -9%;
+  margin-right: -50%;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.103);
+  justify-content: center;
+  padding: 3vh;
+  border-radius: 30px;
+}
+.slides {
+  width: 400%;
+  height: 300px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 25%;
+  position: relative;
+  padding-right: 300px;
+}
+.slide img {
+  width: 500px;
+}
+.manual-navigation {
+  position: absolute;
+  width: 600px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn {
+  border: 2px solid rgb(0, 47, 62);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.manual-btn:hover {
+  background-color: #05d5fe;
+}
+
+#radio1:checked ~ .first h1 {
+  margin-left: 10%;
+  font-size: 40pt;
+  font-weight: bolder;
+  color: #002658;
+  text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
+  width: 400px;
+}
+#radio1:checked ~ .first {
+  margin-left: 0%;
+}
+#radio2:checked ~ .first {
+  margin-left: -15%;
+}
+#radio3:checked ~ .first {
+  margin-left: -72%;
+}
+#radio4:checked ~ .first {
+  margin-left: -110%;
+}
+
+.navigation-auto:not(:last-child) {
+  margin-right: 40px;
+}
+
+.colored {
+  background-color: #2d9eb5;
+}
+#BelugaPng img, #JubartePng img, #AzulPng img{
+  margin-top: 24%;
+  animation: go-back 5s infinite alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateX(10px);
+    transform: translateY(10px);
+    transform: rotate(10deg);
+  }
+  to {
+    transform: translateX(0);
+    transform: translateY(0);
+    transform: rotate(-10deg);
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  nav {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+  }
+  nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    list-style: none;
+    align-items: center;
+    margin-left: -75%;
+
+    -webkit-animation-name: bob-float, bloob;
+    animation-name: bob-float, bloob;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.2s, 3s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+  .links {
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #002960;
+    text-decoration: none;
+    padding-right: 4vw;
+    font-size: 10pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #LogoImg {
+    display: block;
+    margin-top: -5%;
+    margin-left: 120%;
+    margin-bottom: 30%;
+    flex-direction: column;
+    max-width: min-content;
+    align-items: center;
+  }
+  #LogoImg img {
+    max-width: 250px;
+  }
+
+  #CardArea {
+    max-width: 250px;
+    background-color: rgba(255, 255, 255, 0.103);
+    padding: 5px 30px 30px 30px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20vh;
+    border-radius: 30px;
+  }
+  #CardArea p {
+    margin-top: -5%;
+    font-size: 12pt;
+    font-weight: bolder;
+    text-align: justify;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+  }
+  #CardArea span {
+    margin-top: -5%;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 12pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+  }
+  #CardArea h1 {
+    font-size: 20pt;
+    font-weight: bolder;
+    text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
+  }
+  strong {
+    color: #0348a2;
+    text-shadow: rgba(214, 213, 213, 0.671) 1px 1px 1px;
+  }
+  #BotaoBaleiaAzul {
+    background-color: rgba(255, 255, 255, 0.701);
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 15pt;
+    margin-left: 0;
+    margin-top: 58vh;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #0d4691;
+    
+  }
+  .slider {
+    margin-top: -45vh;
+    margin-right: 0%;
+    width: 280px;
+    height: 150px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.103);
+    justify-content: center;
+    padding: 2vh 2vh;
+    border-radius: 30px;
+    position: absolute;
+  }
+  .slides {
+    width: 400%;
+    height: 300px;
+    display: flex;
+  }
+  .slides input {
+    display: none;
+  }
+  .slide {
+    width: 25%;
+    position: relative;
+    padding-right: 300px;
+  }
+  .slide img {
+    width: 200px;
+  }
+  .manual-navigation {
+    position: absolute;
+    width: 100%;
+    margin-top: -23vh;
+    margin-left: -1vh;
+    display: flex;
+    justify-content: center;
+  }
+  .manual-btn {
+    border: 2px solid rgb(0, 47, 62);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+  .manual-btn:hover {
+    background-color: #05d5fe;
+  }
+  
+  #radio1:checked ~ .first h1 {
+    margin-left: 10%;
+    font-size: 22pt;
+    font-weight: bolder;
+    color: #002658;
+    text-shadow: rgba(255, 255, 255, 0.671) 2px 1px 1px;
+    width: 240px;
+  }
+  #radio1:checked ~ .first {
+    margin-left: 0%;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -35%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -90%;
+  }
+  #radio4:checked ~ .first {
+    margin-left: -152%;
+  }
+  
+  .navigation-auto:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .colored {
+    background-color: #ebebeb;
+  }
+  #BelugaPng, #JubartePng, #AzulPng{
+    margin-top: 12%;
+    animation: go-back 5s infinite alternate;
+  }
+  
+  @keyframes go-back {
+    from {
+      transform: translateX(10px);
+      transform: translateY(10px);
+      transform: rotate(10deg);
+    }
+    to {
+      transform: translateX(0);
+      transform: translateY(0);
+      transform: rotate(-10deg);
+    }
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 460px){
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  nav {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+  }
+  nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    list-style: none;
+    align-items: center;
+    margin-left: -65%;
+
+    -webkit-animation-name: bob-float, bloob;
+    animation-name: bob-float, bloob;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.2s, 3s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+  .links {
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #002960;
+    text-decoration: none;
+    padding-right: 4vw;
+    font-size: 11pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #LogoImg {
+    display: block;
+    margin-top: -5%;
+    margin-left: 125%;
+    margin-bottom: 30%;
+    flex-direction: column;
+    max-width: min-content;
+    align-items: center;
+  }
+  #LogoImg img {
+    max-width: 250px;
+  }
+
+  #CardArea {
+    
+    background-color: rgba(255, 255, 255, 0.103);
+    padding: 5px 30px 30px 30px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: -8vh;
+    border-radius: 30px;
+    max-width: 65vw;
+  }
+  #CardArea p {
+    margin-top: -5%;
+    font-size: 12pt;
+    font-weight: bolder;
+    text-align: justify;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+  }
+  #CardArea span {
+    margin-top: -5%;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 12pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+  }
+  #CardArea h1 {
+    font-size: 20pt;
+    font-weight: bolder;
+    text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
+  }
+  strong {
+    color: #0348a2;
+    text-shadow: rgba(214, 213, 213, 0.671) 1px 1px 1px;
+  }
+  #BotaoBaleiaAzul {
+    background-color: rgba(255, 255, 255, 0.701);
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 15pt;
+    margin-left: 0;
+    margin-top: 19vh;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #0d4691;
+    
+  }
+  .slider {
+    margin-top: 70vh;
+    margin-right: 0%;
+    max-width: 75vw;
+    height: 60vw;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.103);
+    justify-content: center;
+    padding: 2vh 2vh;
+    border-radius: 30px;
+    position: absolute;
+  }
+  .slides {
+    width: 400%;
+    height: 300px;
+    display: flex;
+  }
+  .slides input {
+    display: none;
+  }
+  .slide {
+    width: 25%;
+    position: relative;
+    padding-right: 300px;
+  }
+  .slide img {
+    width: 65vw;
+  }
+  .manual-navigation {
+    position: absolute;
+    width: 100%;
+    margin-top: -8vh;
+    margin-left: -2vh;
+    display: flex;
+    justify-content: center;
+  }
+  .manual-btn {
+    border: 2px solid rgb(0, 47, 62);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+  .manual-btn:hover {
+    background-color: #05d5fe;
+  }
+  
+  #radio1:checked ~ .first h1 {
+    margin-left: 10%;
+    font-size: 28pt;
+    font-weight: bolder;
+    color: #002658;
+    text-shadow: rgba(255, 255, 255, 0.671) 2px 1px 1px;
+    width: 240px;
+  }
+  #radio1:checked ~ .first {
+    margin-left: 0%;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -32%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -95%;
+  }
+  #radio4:checked ~ .first {
+    margin-left: -142%;
+  }
+  
+  .navigation-auto:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .colored {
+    background-color: #ebebeb;
+  }
+  #BelugaPng img, #JubartePng img, #AzulPng img{
+    margin-top: 24%;
+    animation: go-back 5s infinite alternate;
+  }
+  #BelugaPng, #JubartePng , #AzulPng{
+ 
+    text-decoration: none;
+  }
+ 
+  #BelugaPng::after{
+    content: "Baleia Beluga";
+    font-size: 20pt;
+    font-weight: bolder;
+    color: #003477;
+    text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
+    position: absolute;
+    margin-top: 1%;
+    margin-left:-36%;
+    
+  }
+  #JubartePng::after{
+    content: "Baleia Jubarte";
+    font-size: 20pt;
+    font-weight: bolder;
+    color: #003477;
+    text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -36%;
+    
+  }
+  #AzulPng::after{
+    content: "Baleia-azul";
+    font-size: 20pt;
+    font-weight: bolder;
+    color: #003477;
+    text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -32%;
+    
+  }
+  
+  
 }
