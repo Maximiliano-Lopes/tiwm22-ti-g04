@@ -296,6 +296,60 @@ strong {
     transform: rotate(-10deg);
   }
 }
+@media screen and (min-width: 1100) and (max-width: 1500px){
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  nav {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+  }
+  nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    list-style: none;
+    align-items: center;
+  
+
+    -webkit-animation-name: bob-float, bloob;
+    animation-name: bob-float, bloob;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.2s, 3s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+  .links {
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #002960;
+    text-decoration: none;
+    padding-right: 4vw;
+    font-size: 12pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+}
 @media screen and (max-width: 400px) {
   main {
     display: flex;
