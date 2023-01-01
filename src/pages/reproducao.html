@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html id="reproducao" lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../styles/index.css" />
+  <link rel="stylesheet" href="../styles/reproducao.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -18,8 +18,8 @@
   <nav>
 
     <ul>
-      <li><a href="/" id="LogoImg"><img src="../images/LogoImg.png" /></a></li>
-      <li><a href="/pages/especies" class="links">ESPÉCIES</a></li>
+      <li><a href="../index.html" id="LogoImg"><img src="../images/LogoImg.png" /></a></li>
+      <li><a href="especies.html" class="links">ESPÉCIES</a></li>
       <li><a href="/alimentacao" class="links">ALIMENTAÇÃ0</a></li>
       <li><a href="/reproducao" class="links">REPRODUÇÃO</a></li>
       <li><a href="/curiosidades" class="links">CURIOSIDADES</a></li>
@@ -35,10 +35,7 @@
         e tem <em>somente uma cria por vez</em>!
       </p>
     </div>
-    <a href="/tiwm22-ti-g04/src/pages/especies.html#baleiaAzul" id="BotaoBaleiaAzul">SAIBA MAIS SOBRE A REPRODUÇÃO <br>
-      DAS BALEIAS!</a>
 
-    </div>
     <div class="slider">
       <div class="slides">
         <input type="radio" name="radio-btn" id="radio1" checked>
@@ -47,17 +44,44 @@
         <input type="radio" name="radio-btn" id="radio4">
 
         <div class="slide first">
-          <h1>Veja algumas das baleias mais famosas!</h1>
+          <h2>Aprenda sobre a reprodução das baleias!</h2>
+          <img src="../images/baleia_filhote.jpg" /></a>
         </div>
+
         <div class="slide">
-          <a href="pages/especies.html#jubarte" id="JubartePng"><img src="images/WhalePng.png" alt="Jubarte"></a>
+          <h1>Baleia Jubarte</h1>
+          <p>Quisque semper libero ante, ut eleifend nulla hendrerit id. Quisque in placerat velit. Proin sed metus ut
+            ipsum egestas lobortis. Maecenas in tincidunt purus. Nullam turpis velit, mollis vel mi ut, facilisis
+            pulvinar nibh. Quisque volutpat mauris non semper rutrum. Sed at congue dui. Aenean ligula augue, porttitor
+            eget odio eu, ultrices faucibus ligula. Vivamus mollis massa nec nisl molestie, id suscipit nibh lacinia.
+            Vestibulum porttitor, orci nec porta fermentum, massa mauris iaculis nisi, ac ullamcorper eros risus at
+            nibh. Etiam et molestie quam. Morbi hendrerit ultricies lacinia. Etiam at metus imperdiet, pulvinar massa
+            non, malesuada leo. Sed vel tellus eget tellus suscipit pulvinar non ac est. Morbi a congue quam.
+            Suspendisse nulla ipsum, hendrerit a tortor vitae, porta dignissim justo.</p>
         </div>
+
         <div class="slide">
-          <a href="pages/especies.html#baleiaAzul" id="AzulPng"><img src="images/Blue-Whale.png" alt="BALEIA-AZUL"></a>
+          <h1>Baleia Azul</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum rutrum libero vel porta.</p>
+          <p>Sed varius pellentesque ipsum a aliquam. Quisque congue velit erat. Nunc lobortis nunc ut viverra
+            malesuada. Fusce sapien purus, ultrices ut ipsum vitae, tempor fringilla magna. Nulla nec nulla quis eros
+            pharetra aliquam sed eget justo. In pretium pellentesque arcu quis bibendum. Nunc et elementum odio. Aliquam
+            sit amet lacus neque. Etiam id tincidunt lorem. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Sed ultricies diam et ipsum condimentum pharetra.</p>
+          </p>
         </div>
+
         <div class="slide">
-          <a href="pages/especies.html#beluga" id="BelugaPng"><img src="images/Beluga.png" alt="Beluga"></a>
+          <h1>Beluga</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum rutrum libero vel porta. Sed varius
+            pellentesque ipsum a aliquam. Quisque congue velit erat. Nunc lobortis nunc ut viverra malesuada. Fusce
+            sapien purus, ultrices ut ipsum vitae, tempor fringilla magna. Nulla nec nulla quis eros pharetra aliquam
+            sed eget justo. In pretium pellentesque arcu quis bibendum. Nunc et elementum odio. Aliquam sit amet lacus
+            neque. Etiam id tincidunt lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+            ac turpis egestas. Sed ultricies diam et ipsum condimentum pharetra.</p>
+          </p>
         </div>
+
         <div class="navigation-auto">
           <div class="auto-btn1"></div>
           <div class="auto-btn2"></div>
@@ -65,6 +89,7 @@
           <div class="auto-btn4"></div>
         </div>
       </div>
+
       <div class="manual-navigation">
         <label for="radio1" class="manual-btn" id="manual-btn1" onclick="RetirarCheck(this.id)"></label>
         <label for="radio2" class="manual-btn" id="manual-btn2" onclick="RetirarCheck(this.id)"></label>
@@ -72,6 +97,7 @@
         <label for="radio4" class="manual-btn" id="manual-btn4" onclick="RetirarCheck(this.id)"></label>
       </div>
     </div>
+
     <script src="scripts/index.js"></script>
   </main>
 </body>
