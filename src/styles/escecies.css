@@ -1,0 +1,262 @@
+
+body {
+    background-image: url("../images/background-ocean.png");
+    margin: 0;
+    padding: 0;
+    font-family: "Handlee", cursive;
+    font-family: "Urbanist", sans-serif;
+    color: rgb(255 255 255);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  nav {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  nav ul{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    list-style: none;
+    align-items: center; 
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .links {
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #002960;
+    text-decoration: none;
+    padding-right: 4vw;
+    font-size: 20pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #LogoImg {
+    display: inline-flex;
+    flex-direction: row;
+    max-width: min-content;
+    margin-left: -1%;
+  }
+  #LogoImg img {
+    max-width: 400px;
+  }
+  #CardArea {
+    background-color: rgba(255, 255, 255, 0.103);
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-left: 8vw;
+    margin-right: 6vw;
+    margin-top: -10vh;
+    border-radius: 30px;
+    width: 100%;
+  }
+  #CardArea p {
+    margin-top: -5vh;
+    font-size: 10pt;
+    font-weight:200;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+  }
+  #CardArea h3 {
+    font-size: 15pt;
+    font-weight: bolder;
+    color: #002960
+  }
+  #CardArea2 {
+    background-color: rgba(255, 255, 255, 0.103);
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-left: 0px;
+    margin-right:0px;
+    margin-left: 8vw;
+    margin-right: 6vw;
+    margin-top: 2vh;
+    border-radius: 30px;
+    width: 100%;
+}
+#CardArea2 p{
+  margin-top: -5vh;
+  font-size: 10pt;
+  font-weight:200;
+  text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+}
+#CardArea2 h3 {
+  font-size: 15pt;
+  font-weight: bolder;
+  color: #002960
+  }
+
+  #CardArea3 {
+    background-color: rgba(255, 255, 255, 0.103);
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-left: 0px;
+    margin-right:0px;
+    margin-left: 8vw;
+    margin-right: 6vw;
+    margin-top: 2vh;
+    border-radius: 30px;
+    width: 100%;
+}
+#CardArea3 p{
+  margin-top: -5vh;
+  font-size: 10pt;
+  font-weight:200;
+  text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+}
+
+#CardArea3 h3 {
+  font-size: 15pt;
+  font-weight: bolder;
+  color: #002960
+  }
+
+@media screen and (max-width: 450px){
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  nav {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+  }
+  nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    list-style: none;
+    align-items: center;
+    margin-left: -65%;
+
+    -webkit-animation-name: bob-float, bloob;
+    animation-name: bob-float, bloob;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.2s, 3s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+  .links {
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #002960;
+    text-decoration: none;
+    padding-right: 4vw;
+    font-size: 11pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #LogoImg {
+    display: block;
+    margin-top: -5%;
+    margin-left: 125%;
+    margin-bottom: 30%;
+    flex-direction: column;
+    max-width: min-content;
+    align-items: center;
+  }
+  #LogoImg img {
+    max-width: 250px;
+  }
+  #CardArea {
+    background-color: rgba(255, 255, 255, 0.103);
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-left: 8vw;
+    margin-right: 0vw;
+    margin-top: -11vh;
+    border-radius: 30px;
+    width: 100%;
+  }
+  #CardArea p {
+    margin-top: -5vh;
+    font-size: 8.3pt;
+    font-weight:200;
+  }
+  #CardArea h3 {
+    font-size: 15pt;
+    font-weight: bolder;
+    color: #002960
+  }
+
+  #CardArea2 {
+    background-color: rgba(255, 255, 255, 0.103);
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-left: 0px;
+    margin-right:0px;
+    margin-left: 8vw;
+    margin-right: 0vw;
+    margin-top: 1vh;
+    border-radius: 30px;
+    width: 100%;
+}
+#CardArea2 p{
+  margin-top: -5vh;
+  font-size: 8.3pt;
+  font-weight:200;
+}
+#CardArea2 h3 {
+  font-size: 15pt;
+  font-weight: bolder;
+  color: #002960
+  }
+  #CardArea3 {
+    background-color: rgba(255, 255, 255, 0.103);
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-left: 0px;
+    margin-right:0px;
+    margin-left: 8vw;
+    margin-right: 0vw;
+    margin-top: 1vh;
+    border-radius: 30px;
+    width: 100%;
+}
+#CardArea3 p{
+  margin-top: -5vh;
+  font-size: 8.3pt;
+  font-weight:200;
+}
+
+#CardArea3 h3 {
+  font-size: 15pt;
+  font-weight: bolder;
+  color: #002960
+  }
+}

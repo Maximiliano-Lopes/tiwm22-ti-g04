@@ -1,0 +1,20 @@
+{
+  "name": "tiwm22-ti-g04",
+  "version": "1.0.0",
+  "description": "Projeto da faculdade.",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo \"ok\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monster1001/tiwm22-ti-g04.git"
+  },
+  "author": "grupo4",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Monster1001/tiwm22-ti-g04/issues"
+  },
+  "homepage": "https://github.com/Monster1001/tiwm22-ti-g04#readme"
+}
