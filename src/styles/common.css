@@ -101,7 +101,7 @@ nav li {
 }
 
 #CardArea p {
-    font-size: 28pt;
+    font-size: 26pt;
     font-weight: bolder;
     text-align: justify;
     text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
@@ -114,7 +114,7 @@ nav li {
 }
 
 #CardArea h1 {
-    font-size: 60pt;
+    font-size: 34pt;
     font-weight: bolder;
     text-shadow: rgba(255, 255, 255, 0.671) 6px 3px 1px;
 }
@@ -227,7 +227,7 @@ strong {
 }
 
 .slide img {
-    width: 100%;
+    width: 75%;
     border-radius: 50%;
 }
 
