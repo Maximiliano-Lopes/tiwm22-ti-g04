@@ -1,7 +1,7 @@
 body {
     background-image: url("../images/background-ocean.png");
     margin: 0;
-    padding: 0;
+    padding: 0 2px;
     font-family: "Handlee", cursive;
     font-family: "Urbanist", sans-serif;
     color: #002960;
@@ -28,10 +28,12 @@ nav {
 nav ul {
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     float: left;
     list-style: none;
     align-items: center;
+    padding-left: 0px;
 
     -webkit-animation-name: bob-float, bloob;
     animation-name: bob-float, bloob;
@@ -207,7 +209,8 @@ strong {
 .slides {
     width: 400%;
     height: 400px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: row;
 }
@@ -297,63 +300,9 @@ strong {
     }
 }
 
-@media screen and (min-width: 1100) and (max-width: 1500px) {
-    main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-    }
-
-    nav {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100vw;
-    }
-
-    nav ul {
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-        float: left;
-        list-style: none;
-        align-items: center;
-
-        -webkit-animation-name: bob-float, bloob;
-        animation-name: bob-float, bloob;
-        -webkit-animation-duration: 0.3s, 1.5s;
-        animation-duration: 0.2s, 3s;
-        -webkit-animation-delay: 0s, 0.3s;
-        animation-delay: 0s, 0.3s;
-        -webkit-animation-timing-function: ease-out, ease-in-out;
-        animation-timing-function: ease-out, ease-in-out;
-        -webkit-animation-iteration-count: 1, infinite;
-        animation-iteration-count: 1, infinite;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-direction: normal, alternate;
-        animation-direction: normal, alternate;
-    }
-
-    .links {
-        font-weight: 800;
-        letter-spacing: -1px;
-        color: #002960;
-        text-decoration: none;
-        padding-right: 4vw;
-        font-size: 12pt;
-        text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
+/* Medium devices (landscape tablets, 768px and down)
+See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
+@media screen and (max-width: 768px) {
     main {
         display: flex;
         flex-direction: column;
@@ -439,110 +388,7 @@ strong {
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 460px) {
-    main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-    }
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
 
-    nav {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100vw;
-    }
-
-    nav ul {
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-        float: left;
-        list-style: none;
-        align-items: center;
-        margin-left: -65%;
-
-        -webkit-animation-name: bob-float, bloob;
-        animation-name: bob-float, bloob;
-        -webkit-animation-duration: 0.3s, 1.5s;
-        animation-duration: 0.2s, 3s;
-        -webkit-animation-delay: 0s, 0.3s;
-        animation-delay: 0s, 0.3s;
-        -webkit-animation-timing-function: ease-out, ease-in-out;
-        animation-timing-function: ease-out, ease-in-out;
-        -webkit-animation-iteration-count: 1, infinite;
-        animation-iteration-count: 1, infinite;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-direction: normal, alternate;
-        animation-direction: normal, alternate;
-    }
-
-    .links {
-        font-weight: 800;
-        letter-spacing: -1px;
-        color: #002960;
-        text-decoration: none;
-        padding-right: 4vw;
-        font-size: 11pt;
-        text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    #LogoImg {
-        display: block;
-        margin-top: -5%;
-        margin-left: 125%;
-        margin-bottom: 30%;
-        flex-direction: column;
-        max-width: min-content;
-        align-items: center;
-    }
-
-    #LogoImg img {
-        max-width: 250px;
-    }
-
-    #CardArea {
-
-        background-color: rgba(255, 255, 255, 0.103);
-        padding: 5px 30px 30px 30px;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        margin-top: -8vh;
-        border-radius: 30px;
-        max-width: 65vw;
-    }
-
-    #CardArea p {
-        margin-top: -5%;
-        font-size: 12pt;
-        font-weight: bolder;
-        text-align: justify;
-        text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
-    }
-
-    #CardArea span {
-        margin-top: -5%;
-        position: absolute;
-        font-weight: bolder;
-        font-size: 12pt;
-        text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
-    }
-
-    #CardArea h1 {
-        font-size: 20pt;
-        font-weight: bolder;
-        text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
-    }
-
-    strong {
-        color: #0348a2;
-        text-shadow: rgba(214, 213, 213, 0.671) 1px 1px 1px;
-    }
-}
+} */
