@@ -1,57 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html id="reproducao" lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../styles/escecies.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Handlee&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Whalepédia</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/escecies.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Handlee&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Whalepédia</title>
 </head>
+
 <body>
-  <nav>  
+  <nav>
+
     <ul>
-      <li><a href="../index.html" id="LogoImg"
-        ><img src="../images/LogoImg.png"/></a></li>
-      <li><a href="pages/especies.html" class="links">ESPÉCIES</a></li>
-      <li><a href="alimentacao" class="links">ALIMENTAÇÃO</a></li>
+      <li><a href="../index.html" id="LogoImg"><img src="../images/LogoImg.png" /></a></li>
+      <li><a href="especies.html" class="links">ESPÉCIES</a></li>
+      <li><a href="alimentacao.html" class="links">ALIMENTAÇÃ0</a></li>
       <li><a href="reproducao.html" class="links">REPRODUÇÃO</a></li>
       <li><a href="curiosidades.html" class="links">CURIOSIDADES</a></li>
     </ul>
+
   </nav>
   <main>
     <div id="CardArea">
-      <h3>  Baleia-Azul</h3><br>
+      <h1>ESPÉCIES</h1>
       <p>
-          Nome científico Balaenoptera musculus, da ordem Cetartiodactyla, família Balaenopteridae, gênero Balaenopter.<br>
-          A baleia não é um peixe, é um mamífero e respira por pulmões. A Baleia azul pode atingir até 30 metros de comprimento (correspondendo a um prédio de 10 andares) e pesar mais de 150 toneladas. Ela é encontrada em todos os oceanos do nosso planeta.<br>
-          Possui um corpo bastante longo e com formato hidrodinâmico, a cabeça possui um formato de U, da garganta do animal partem pregas ventrais que podem ser observadas até, aproximadamente, até metade de seu corpo. A baleia-azul possui nadadeiras peitorais e nadadeiras dorsais relativamente pequenas.<br>
-          A coloração, como o nome já diz, é azul-cinzento, sendo possível observar neles algumas manchas claras. Essas manchas correspondem as impressões digitais dos humanos, servindo para identificação do indivíduo. 
+        As baleias são mamíferos pertencentes à ordem dos cetáceos, que é dividida em duas subordens: <br>
+        Myscticeti (baleias de barbatanas) e Odontoceti (baleias com dentes).
       </p>
-     
     </div>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+          <h2>Aprenda sobre as baleias:</h2>
+          <img src="../images/baleia_azul_especies.jpg" /></a>
+        </div>
+
+        <div class="slide">
+          <h1>Baleia Jubarte</h1>
+          <p>A Baleia Jubarte distingue-se de outras espécies de Misticetos por sua coloração em tons de azul e preto, suas compridas nadadeiras peitorais (até 5 m de comprimento), e pela presença de uma sutil 
+            corcova na qual sua nadadeira dorsal está apoiada, o que originou um dos nomes vulgares desta espécie, também conhecida como baleia corcunda.
+            O formato e cor das nadadeiras dorsal e caudal destes animais, são, inclusive, utilizados para a identificação dos indivíduos, visto que cada baleia apresenta um padrão único.<br>
+            As Baleias Jubarte podem alcançar até 16 metros de comprimento, pesando até 40 toneladas, e assim como outras espécies de rorquais, apresentam sulcos na garganta que se expandem, enquanto se alimentam. 
+            Além disso, estes cetáceos também apresentam calombos (ou nódulos) arredondados no topo de sua cabeça e mandíbula inferior, os quais podem estar cobertos por cracas, e apresentam pelo menos um pelo rígido.<br> 
+            Apesar da função exata deste pelo ainda não ter sido definida, acredita-se que esta estrutura tenha finalidade sensorial, permitindo que a Baleia Jubarte detecte movimento em suas proximidades.
+          </p>
+        </div>
+
+        <div class="slide">
+          <h1>Baleia Azul</h1>
+          <p>Nome científico Balaenoptera musculus, da ordem Cetartiodactyla, família Balaenopteridae, gênero Balaenopter.<br>
+            A baleia não é um peixe, é um mamífero e respira por pulmões. A Baleia azul pode atingir até 30 metros de comprimento (correspondendo a um prédio de 10 andares) e pesar mais de 150 toneladas. 
+            Ela é encontrada em todos os oceanos do nosso planeta.<br>
+            Possui um corpo bastante longo e com formato hidrodinâmico, a cabeça possui um formato de U, da garganta do animal partem pregas ventrais que podem ser observadas até, aproximadamente, até 
+            metade de seu corpo. A baleia-azul possui nadadeiras peitorais e nadadeiras dorsais relativamente pequenas.<br>
+            A coloração, como o nome já diz, é azul-cinzento, sendo possível observar neles algumas manchas claras. Essas manchas correspondem as impressões digitais dos humanos, 
+            servindo para identificação do indivíduo. 
+          </p>
+
+
+        </div>
+
+        <div class="slide">
+          <h1>Beluga</h1>
+          <p>A baleia beluga, também conhecida como baleia branca (Delphinapterus leucas). A beluga 
+            possui apenas um único orifício respiratório, dentes cônicos, e um sistema sonoro de localização para busca de alimentos.<BR>
+              Estas baleias podem alcançar até 5 metros de comprimento, pesando em média 1,5 tonelada, e apresentam corpo com extremidade cônica, 
+              além de uma cabeça pequena e arredondada com bico curto e testa proeminente, onde encontra se o melão, 
+              órgão que auxilia o sistema de eco localização. 
+          </p>
+
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn" id="manual-btn1" onclick="RetirarCheck(this.id)"></label>
+        <label for="radio2" class="manual-btn" id="manual-btn2" onclick="RetirarCheck(this.id)"></label>
+        <label for="radio3" class="manual-btn" id="manual-btn3" onclick="RetirarCheck(this.id)"></label>
+        <label for="radio4" class="manual-btn" id="manual-btn4" onclick="RetirarCheck(this.id)"></label>
+      </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
   </main>
-  <main>
-  <div id="CardArea2">
-    <h3>Cachalote</h3><br>
-    <p>
-      Baleia cachalote (Physeter macrocephalus) é a maior espécie da subordem Odontoceti. A Cachalote é caracterizada como o maior mamífero com dentes a habitar o planeta. <br>
-      Os machos podem alcançar até 20 metros de comprimento e pesar até 45 toneladas, já as femêas, geralmente atinge 17 metros de comprimento com peso de até 14 toneladas. Entre outras características, a cabeça de um cachalote chega a representar 35% da sua superfície corporal, com o maior cérebro já registrado no mundo animal.
-    </p>
-  </div>
-</main>
-<main>
-  <div id="CardArea3">
-    <h3>Beluga</h3><br>
-    <p>
-      A baleia beluga, também conhecida como baleia branca (Delphinapterus leucas). A beluga possui apenas um único orifício respiratório, dentes cônicos, e um sistema sonoro de localização para busca de alimentos. <br>
-      Estas baleias podem alcançar até 5 metros de comprimento, pesando em média 1,5 tonelada, e apresentam corpo com extremidade cônica, além de uma cabeça pequena e arredondada com bico curto e testa proeminente, onde encontra se o melão, órgão que auxilia o sistema de eco localização. <br>
-    </p>
-  </div>
-</main>
 </body>
+
 </html>
