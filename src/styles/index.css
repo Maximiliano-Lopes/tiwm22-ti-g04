@@ -5,8 +5,7 @@ body {
   font-family: "Handlee", cursive;
   font-family: "Urbanist", sans-serif;
   color: #002960;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   width: 100%;
   height: 100%;
 }

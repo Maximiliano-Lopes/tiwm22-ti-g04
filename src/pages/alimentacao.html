@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html id="reproducao" lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/alimentacao.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Handlee&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Whalepédia</title>
+</head>
+
+<body>
+  <nav>
+
+    <ul>
+      <li><a href="../index.html" id="LogoImg"><img src="../images/LogoImg.png" /></a></li>
+      <li><a href="especies.html" class="links">ESPÉCIES</a></li>
+      <li><a href="alimentacao.html" class="links">ALIMENTAÇÃ0</a></li>
+      <li><a href="reproducao.html" class="links">REPRODUÇÃO</a></li>
+      <li><a href="curiosidades.html" class="links">CURIOSIDADES</a></li>
+    </ul>
+
+  </nav>
+  <main>
+    <div id="CardArea">
+      <h1>Alimentação</h1>
+      <p>
+        A alimentação das baleias tem como base animais muito pequenos, 
+        por isso elas consomem enormes quantidades deles.
+      </p>
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+            <h1>Alimentação</h1>
+            <table border="2">
+              <thead>
+                  <tr>
+                      <th>Baleia</th>
+                      <th>Alimento</th>
+                      <th>Quantidade</th>
+                      <th>Local</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Baleia-Azul</td>
+                      <td>Crustáceos, Moluscos, Zooplancton, Krill</td>
+                      <td> 4 toneladas por dia </td>
+                      <td>Hemisfério Sul</td>
+                  </tr>
+                  <tr>
+                      <td>Baleia Beluga</td>
+                      <td>Lulas, Camarões, Caranguejo, Salmão</td>
+                      <td> 18,2 a 27,2 kg </td>
+                      <td>Hemisfério Sul</td>
+                  </tr>
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td>Baleia Jubarte</td>
+                      <td>Sardinhas, Anchovas, Krill</td>
+                      <td> 2 toneladas por dia </td>
+                      <td>Hemisfério Norte Polar</td>
+                  </tr>
+              </tfoot>
+            </table>
+            
+          </div>
+
+        <div class="slide">
+          <h1>Baleia Jubarte</h1>
+          <p>Para capturar seus alimentos, as jubartes nadam em círculos abaixo desses pequenos animais produzindo algumas bolhas para aprisioná-los. Depois, sobem nadando com a boca aberta apanhando toda a aglomeração 
+            de uma só vez e engolindo, já que não possuem dentes para mastigação.<br>
+            Outras duas técnicas de alimentação envolvem um canto alto e a movimentação forte na água, com o objetivo de atordoar o cardume, sendo assim mais fácil abocanhá-los. É com esses alimentos que acumulam gordura 
+            suficiente para manter a temperatura corporal e as viagens migratórias.</p>
+          <img src="../images/baleia-jubarte-capa-1.webp" />
+        </div>
+
+        <div class="slide">
+          <h1>Baleia Azul</h1>
+          <p>Um fato curioso sobre a alimentação da baleia-azul é que elas não possuem dentes, sendo encontrado no local uma estrutura que lembra uma franja. 
+            Essas franjas são importantes formas de garantir a filtração da água e, consequentemente, a captura das presas. 
+          </p>
+          <img src="../images/Baleias-Cinzentas_alimentacao.jpg" />
+        </div>
+
+        <div class="slide">
+          <h1>Beluga</h1>
+          <p>Como animais inteligentes que são, as belugas são mamíferos que saem para caçar em grupos para aumentar as chances de conseguir encontrar comida. Belugas têm muitos dentes e você pode pensar que elas os usam para 
+            mastigar peixes e outras presas para depois comê-los, mas não, elas não mastigam a comida usando os dentes, a comida é engolida sem ser mastigada a qualquer momento, esse é, sem dúvida, um fato curioso e interessante. 
+            Outro fato curioso é que todos os dias conseguem ingerir cerca de 3% de sua massa corporal.<br>
+            Belugas forrageiam no fundo ou perto do fundo de águas rasas procurando comida. O pescoço flexível de uma baleia beluga permite uma ampla gama de movimentos enquanto forragea no fundo do oceano. Observações sugerem que 
+            as belugas podem produzir sucção e um forte jato de água com suas bocas que, assim como as morsas, podem desalojar as presas do fundo. As baleias beluga também caçam peixes de cardume.
+          </p>
+          <img src="../images/baleia_beluga_alimentcao.webp" />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn" id="manual-btn1" onclick="RetirarCheck(this.id)"></label>
+        <label for="radio2" class="manual-btn" id="manual-btn2" onclick="RetirarCheck(this.id)"></label>
+        <label for="radio3" class="manual-btn" id="manual-btn3" onclick="RetirarCheck(this.id)"></label>
+        <label for="radio4" class="manual-btn" id="manual-btn4" onclick="RetirarCheck(this.id)"></label>
+      </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+  </main>
+</body>
+
+</html>
