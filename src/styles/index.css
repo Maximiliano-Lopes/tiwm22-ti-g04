@@ -296,10 +296,10 @@ strong {
     transform: rotate(-10deg);
   }
 }
-@media screen and (min-width: 1100) and (max-width: 1500px){
+@media screen and (min-width: 600) and (max-width: 1500px){
   main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -341,7 +341,7 @@ strong {
     color: #002960;
     text-decoration: none;
     padding-right: 4vw;
-    font-size: 12pt;
+    font-size: 10pt;
     text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
     display: inline-flex;
     flex-direction: row;
@@ -350,7 +350,7 @@ strong {
 
 
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   main {
     display: flex;
     flex-direction: row;
@@ -558,7 +558,7 @@ strong {
     }
   }
 }
-@media screen and (min-width: 400px) and (max-width: 460px){
+@media screen and (min-width: 400px) and (max-width: 600px){
   main {
     display: flex;
     flex-direction: row;
