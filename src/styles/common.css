@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/background-ocean.png");
+    background-attachment: fixed;
     margin: 0;
     padding: 0 2px;
     font-family: "Handlee", cursive;
@@ -54,7 +55,20 @@ nav ul {
 nav li {
     margin-right: 2vw;
 }
-
+#BotaoBaleiaAzul {
+    background-color: rgba(255, 255, 255, 0.701);
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 15pt;
+    margin-left: 0;
+    margin-top: 60vh !important;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #0d4691;
+    
+  }
 .links {
     font-weight: 800;
     color: #002960;
@@ -197,7 +211,7 @@ strong {
     justify-content: space-between;
     overflow: hidden;
 
-    width: 70vw;
+    width: 50vw;
 
     background-color: rgba(255, 255, 255, 0.103);
     justify-content: center;
@@ -236,6 +250,9 @@ strong {
     text-align: justify;
 }
 
+.slide ul {
+    list-style-type: square
+}
 .manual-navigation {
     width: 100%;
     display: flex;
@@ -392,6 +409,9 @@ See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
         text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
     }
 }
+
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and up)
 @media only screen and (min-width: 600px) {

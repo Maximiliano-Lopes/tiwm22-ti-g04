@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/background-ocean.png");
+    background-attachment: fixed;
     margin: 0;
     padding: 0 2px;
     font-family: "Handlee", cursive;
@@ -67,6 +68,8 @@ body {
     margin-right: 2vw;
   }
   
+  tr:hover {background-color: coral;}
+
   .links {
     font-weight: 800;
     color: #002960;
