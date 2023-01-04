@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/background-ocean.png");
+    background-attachment: fixed;
     margin: 0;
     padding: 0 2px;
     font-family: "Handlee", cursive;
@@ -54,7 +55,20 @@ nav ul {
 nav li {
     margin-right: 2vw;
 }
-
+#BotaoBaleiaAzul {
+    background-color: rgba(255, 255, 255, 0.701);
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 15pt;
+    margin-left: 0;
+    margin-top: 60vh !important;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #0d4691;
+    
+  }
 .links {
     font-weight: 800;
     color: #002960;
