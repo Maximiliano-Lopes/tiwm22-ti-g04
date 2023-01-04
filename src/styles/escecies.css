@@ -231,6 +231,11 @@ strong {
   border-radius: 50%;
 }
 
+.slide p, .slide li {
+  font-size: 18pt;
+  text-align: justify;
+}
+
 .manual-navigation {
   width: 100%;
   display: flex;
