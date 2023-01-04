@@ -12,6 +12,108 @@ body {
   height: 100%;
 }
 
+
+
+body {
+  width: 100%;
+}
+.tank {
+  background-color: rgba(224, 255, 255, 0);
+  min-height: 500px;
+  width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.fish {
+  animation: swimAcross 8s 0s backwards linear infinite;
+}
+#body, #tailFin, #head {
+  stroke: none;
+  fill: cornflowerblue;
+}
+#head, #bodyFin, #eyeLid {
+  stroke: MidnightBlue;
+  stroke-width: 1px;
+}
+#tailFin {
+  transform-origin: 100% 50%;
+  transform-style: preserve-3d;
+  animation: waveTail 1s 0s infinite alternate ease;
+}
+.bubbleContainer {
+  margin-left: 200px;
+}
+.bubbles {
+  height: 150px;
+  width: 40px;
+  position: relative;
+}
+.bubble {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 20px;
+  min-height: 20px;
+  position: absolute;
+  opacity: 0.6;
+}
+.bubble:nth-child(1) {
+  left: 30px;
+  animation: ascendBubble 6s 0s ease infinite both;
+}
+.bubble:nth-child(2) {
+  top: 25px;
+  left: 10px;
+  animation: ascendBubble 8s 0s ease infinite both;
+}
+.bubble:nth-child(3) {
+  top: 15px;
+  animation: ascendBubble 4s 2s ease infinite both;
+}
+.bubble:nth-child(4) {
+  top: 20px;
+  left: 25px;
+  animation: ascendBubble 8s 0s ease infinite both;
+}
+@keyframes swimAcross {
+  0% {
+    transform: translate(-400px, 20px);
+ }
+  10% {
+    transform: translate(-200px, 60px);
+ }
+  20% {
+    transform: translate(20px, 40px);
+ }
+  50% {
+    transform: translate(300px, 110px);
+ }
+  75% {
+    transform: translate(650px, 50px);
+ }
+  100% {
+    transform: translate(750px, 50px);
+ }
+}
+@keyframes waveTail {
+  from {
+    transform: rotateY(-35deg);
+ }
+  to {
+    transform: rotateY(35deg);
+ }
+}
+@keyframes ascendBubble {
+  from {
+    transform: translate(10px, 400px);
+ }
+  to {
+    transform: translate(-10px, -300px);
+ }
+}
+
+
+
 main {
   display: flex;
   flex-direction: row;
