@@ -211,7 +211,7 @@ strong {
     justify-content: space-between;
     overflow: hidden;
 
-    width: 70vw;
+    width: 50vw;
 
     background-color: rgba(255, 255, 255, 0.103);
     justify-content: center;
@@ -250,6 +250,9 @@ strong {
     text-align: justify;
 }
 
+.slide ul {
+    list-style-type: square
+}
 .manual-navigation {
     width: 100%;
     display: flex;
@@ -406,6 +409,9 @@ See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
         text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
     }
 }
+
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and up)
 @media only screen and (min-width: 600px) {
