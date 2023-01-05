@@ -307,7 +307,7 @@ strong {
 }
 
 
-.slider::after{
+.slider:hover:after{
   content: "⇩";
   position: absolute;
   width: 2em;
