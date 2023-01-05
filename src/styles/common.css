@@ -321,7 +321,7 @@ strong {
         transform: rotate(-10deg);
     }
 }
- .slider::after{
+ .slider:hover::after{
     content: "⇩";
     position: absolute;
     width: 2em;
@@ -337,6 +337,8 @@ strong {
     background-color: #00265891;
     font-size: 18pt;
  }
+
+
 #titleRepro:hover::after{
     content: "Veja tudo sobre a reprodução no card ao lado!";
     position: absolute;
