@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Monster1001/tiwm22-ti-g04/issues"
   },
-  "homepage": "https://github.com/Monster1001/tiwm22-ti-g04#readme"
+  "homepage": "https://github.com/Monster1001/tiwm22-ti-g04#readme",
+  "dependencies": {
+    "jquery": "^3.6.3"
+  }
 }
