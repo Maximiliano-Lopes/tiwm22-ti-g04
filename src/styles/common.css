@@ -143,16 +143,25 @@ footer {
     color: rgb(255, 255, 255);
 }
 
+form {
+    font-size: small;
+  }
+
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     width: 50vw;
     margin: 0 auto 2rem;
   }
+
+  form h1 {
+   text-align: center;
+  }
+
   form input{
-    width: 35%;
+    width: 40%;
     background-color: rgba(255, 255, 255, 0.616);
     border: none;
     border-radius: 20px;
