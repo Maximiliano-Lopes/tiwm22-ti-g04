@@ -125,6 +125,10 @@ strong {
   text-shadow: rgba(170, 170, 170, 0.671) 1px 1px 1px;
 }
 
+footer {
+  text-align: center;
+}
+
 @-webkit-keyframes bloob {
   0% {
       -webkit-transform: translateY(-8px);
@@ -304,6 +308,24 @@ strong {
       transform: translateY(0);
       transform: rotate(-10deg);
   }
+}
+
+
+.slider:hover:after{
+  content: "⇩";
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  align-items: baseline;
+  justify-items: center;
+  margin-left: 85%;
+  margin-top: 55%;
+  border-radius: 100%;
+  text-shadow: none;
+  color: white;
+  background-color: #00265891;
+  font-size: 18pt;
 }
 
 /* Medium devices (landscape tablets, 768px and down)

@@ -138,6 +138,10 @@ strong {
     text-shadow: rgba(170, 170, 170, 0.671) 1px 1px 1px;
 }
 
+footer {
+    text-align: center;
+}
+
 @-webkit-keyframes bloob {
     0% {
         -webkit-transform: translateY(-8px);
@@ -321,6 +325,36 @@ strong {
         transform: rotate(-10deg);
     }
 }
+ .slider:hover::after{
+    content: "⇩";
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    align-items: baseline;
+    justify-items: center;
+    margin-left: 85%;
+    margin-top: 55%;
+    border-radius: 100%;
+    text-shadow: none;
+    color: white;
+    background-color: #00265891;
+    font-size: 18pt;
+ }
+
+
+#titleRepro:hover::after{
+    content: "Veja tudo sobre a reprodução no card ao lado!";
+    position: absolute;
+    margin-top: -15%;
+    margin-left: 3%;
+    padding: 1vw;
+    border-radius: 20px;
+    text-shadow: none;
+    color: white;
+    background-color: #00265891;
+    font-size: 18pt;
+}
 
 /* Medium devices (landscape tablets, 768px and down)
 See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
@@ -408,6 +442,7 @@ See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
         font-weight: bolder;
         text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
     }
+    
 }
 
 
