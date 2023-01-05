@@ -306,6 +306,24 @@ strong {
   }
 }
 
+
+.slider::after{
+  content: "⇩";
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  align-items: baseline;
+  justify-items: center;
+  margin-left: 85%;
+  margin-top: 55%;
+  border-radius: 100%;
+  text-shadow: none;
+  color: white;
+  background-color: #00265891;
+  font-size: 18pt;
+}
+
 /* Medium devices (landscape tablets, 768px and down)
 See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
 @media screen and (max-width: 768px) {
