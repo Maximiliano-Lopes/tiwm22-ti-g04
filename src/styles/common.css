@@ -140,7 +140,36 @@ strong {
 
 footer {
     text-align: center;
+    color: rgb(255, 255, 255);
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50vw;
+    margin: 0 auto 2rem;
+  }
+  form input{
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: none;
+    border-radius: 20px;
+    margin-top: 1%;
+  }
+  textarea{
+    color: #002658;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 10px;
+  }
+  form h1{
+    color: white;
+  }
+  form label{
+    color: rgb(255, 255, 255);
+    
+  }
 
 @-webkit-keyframes bloob {
     0% {
