@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<baleias 
+xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com dataset.xsd">
+    <baleia>
+        <nome>Baleia-Azul</nome>
+        <alimento>Crustáceos, Moluscos, Zooplancton e Krill.</alimento>
+        <quantidade>4 toneladas por dia</quantidade>
+        <local>Hemisfério Sul</local>
+    </baleia>
+    <baleia>
+        <nome>Baleia Beluga</nome>
+        <alimento>Lulas, Camarões, Caranguejo e Salmão.</alimento>
+        <quantidade>18,2 a 27,2kg por dia</quantidade>
+        <local>Hemisfério Sul</local>
+    </baleia>
+    <baleia>
+        <nome>Baleia Jubarte</nome>
+        <alimento>Sardinhas, Anchovas, Krill	2 toneladas por dia.</alimento>
+        <quantidade>2 toneladas por dia</quantidade>
+        <local>Hemisfério Norte Polar</local>
+    </baleia>
+</baleias>
