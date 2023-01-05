@@ -138,6 +138,10 @@ strong {
     text-shadow: rgba(170, 170, 170, 0.671) 1px 1px 1px;
 }
 
+footer {
+    text-align: center;
+}
+
 @-webkit-keyframes bloob {
     0% {
         -webkit-transform: translateY(-8px);
