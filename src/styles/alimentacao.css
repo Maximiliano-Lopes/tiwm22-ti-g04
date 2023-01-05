@@ -138,6 +138,10 @@ body {
     color: #003477;
     text-shadow: rgba(170, 170, 170, 0.671) 1px 1px 1px;
   }
+
+  footer {
+    text-align: center;
+}
   
   @-webkit-keyframes bloob {
     0% {
