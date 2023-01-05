@@ -321,7 +321,7 @@ strong {
       transform: rotate(-10deg);
   }
 }
-/* Extra large devices (large laptops and desktops, 1280px and up) */
+/* Extra large devices (large laptops and desktops, 1290px and up) */
 @media only screen and (min-width: 1290px) {
   #BotaoBaleiaAzul {
     background-color: rgba(255, 255, 255, 0.701);
@@ -338,8 +338,43 @@ strong {
     
   }
   .first{
-    font-size: 25pt;
+    font-size: 23pt;
     text-align: justify;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: absolute;
+    margin-top: 65%;
+    width: 50vw;
+  }
+  form input{
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: none;
+    border-radius: 20px;
+    margin-top: 1%;
+  }
+  textarea{
+    color: #002658;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 10px;
+  }
+  form h1{
+    color: white;
+  }
+  form label{
+    color: rgb(255, 255, 255);
+    
+  }
+  #file{
+    color: white;
+    
+  }
+  #btnsubmit{
+    margin-bottom: 10%;
   }
 }
 /* Medium devices (landscape tablets, 768px and down)
@@ -468,6 +503,42 @@ See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
   margin-top: -0%;
   overflow-y: hidden;
 }
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  position: absolute;
+  margin-top: 330%;
+  width: 60vw;
+}
+form input{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.616);
+  border: none;
+  border-radius: 20px;
+  margin-top: 5%;
+}
+textarea{
+  color: #002658;
+  font-size: 12pt;
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 10px;
+}
+form h1{
+  color: white;
+}
+form label{
+  color: rgb(255, 255, 255);
+  
+}
+#file{
+  color: white;
+  
+}
+#btnsubmit{
+  margin-bottom: 20%;
+}
 }
 /* Small devices (portrait tablets and large phones, 600px and max 1200px) */
 @media only screen and (min-width: 768px) and (max-width: 1290px){
@@ -486,7 +557,50 @@ See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
 
   }
   .first{
-    font-size: 20pt;
+    font-size: 1.7rem;
+    padding-bottom: 15%;
+    padding-top: 0;
     text-align: justify;
+  }
+  .first h1{
+    margin-top: -4%;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: absolute;
+    margin-top: 100%;
+    width: 60vw;
+  }
+  form input{
+    width: 50%;
+    font-size: 18pt;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: none;
+    border-radius: 20px;
+    margin-top: 5%;
+  }
+  textarea{
+    color: #002658;
+    font-size: 18pt;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 10px;
+  }
+  form h1{
+    color: white;
+  }
+  form label{
+    color: rgb(255, 255, 255);
+    font-size: 18pt;
+    margin-bottom: ;
+  }
+  #file{
+    color: white;
+    
+  }
+  #btnsubmit{
+    margin-bottom: 20%;
   }
 }
