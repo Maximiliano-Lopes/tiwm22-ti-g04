@@ -1,5 +1,6 @@
 body {
   background-image: url("../images/background-ocean.png");
+  background-attachment: fixed;
   margin: 0;
   padding: 0 2px;
   font-family: "Handlee", cursive;
@@ -229,6 +230,11 @@ strong {
 .slide img {
   width: 75%;
   border-radius: 50%;
+}
+
+.slide p, .slide li {
+  font-size: 18pt;
+  text-align: justify;
 }
 
 .manual-navigation {
