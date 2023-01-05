@@ -142,6 +142,7 @@ body {
   footer {
     text-align: center;
     color: rgb(255, 255, 255);
+    font-size: smaller;
 }
   
   @-webkit-keyframes bloob {
