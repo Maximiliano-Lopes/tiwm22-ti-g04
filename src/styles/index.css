@@ -1,6 +1,7 @@
 body {
   background-image: url("../images/background-ocean.png");
   background-attachment: fixed;
+  background-color: #71a6ea;
   margin: 0;
   padding: 0 2px;
   font-family: "Handlee", cursive;
