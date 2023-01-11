@@ -371,14 +371,14 @@ article{
     padding: 5px 10px;
     font-size: 22pt;
     margin-left: -45%;
-    margin-top: 25%;
+    margin-top: 35%;
     text-decoration: none;
     font-weight: 800;
     letter-spacing: -1px;
     color: #0d4691;
   }
   .first {
-    font-size: 23pt;
+    font-size: 21pt;
     text-align: justify;
   }
   form {
@@ -386,7 +386,7 @@ article{
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    margin-top: 150%;
+    margin-top: 70%;
     width: 50vw;
   }
   form input {
@@ -427,6 +427,7 @@ article{
     margin-top: 180%;
     margin-left: -15%;
   }
+
 }
 /* Medium devices (landscape tablets, 768px and down)
 See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
@@ -557,7 +558,7 @@ See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    margin-top: 260rem;
+    margin-top: 80rem;
     width: 60vw;
   }
   form input {
@@ -586,7 +587,7 @@ See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
     margin-bottom: 20%;
   }
   footer {
-    margin-top: 520%;
+    margin-top: 130%;
   }
   article{
     width: 80vw;
