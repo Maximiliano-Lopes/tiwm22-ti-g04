@@ -11,12 +11,19 @@ Assim, o presente trabalho terá como tema as Baleias, tendo como referência ap
 # Organização do Repositório:
 
 O Código-fonte encontra-se na Pasta src.
+
 O documento XML e XSD está na Pasta src, dentro da Pasta data.
+
 As imagens estão na Pasta src, dentro da Pasta images.
+
 As páginas secundárias do projeto (todas exceto o index.html) estão na pasta src, dentro da pasta pages.
+
 Os scrips escritos em JavaScript estão nas pasta src, dentro da pasta scripts.
+
 Os documentos css estão nas pasta src, dentro da pasta styles.
+
 A página index.html está dentro da Pasta src.
+
 O Relatório encontra-se no README.md
 
 # Galeria 1:
