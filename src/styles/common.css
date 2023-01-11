@@ -141,7 +141,7 @@ nav li {
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: rgba(95, 181, 202, 0.267); 
+    background-color: rgb(95, 181, 202); 
     color: white; 
     cursor: pointer; 
     padding: 15px; 
