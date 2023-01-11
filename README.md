@@ -54,18 +54,26 @@ Nenhuma foi utilizada na confecção deste projeto.
 Além disso, o site será do tipo informativo/blog, dividido em 5 páginas estáticas, onde cada uma delas abordará o seguinte tema: 
 
   1ª página: Sessão inicial (Menu principal).
+
   2ª página: Espécies (Conteúdo geral de algumas das espécies mais conhecidas).
+  
   3ª página: Alimentação (Abordará da caça a forma de alimentação propriamente dita).
+  
   4ª página: Reprodução.
+  
   5ª página: Curiosidades.
 
 O design das páginas será criada de acordo com o tema escolhido e deverá apresentar aparência de “fundo do oceano”. O conteúdo terá prioritariamente, mas não exclusivamente, dois meios de comunicação, utilizando-se de imagens e de textos. Também contará com gif e indicações de vídeos na plataforma Youtube e outras páginas web. Além disso, caso o usuário deseje aprofundar informações, poderá enviar um e-mail solicitando mais informações sobre o tema para o endereço de e-mail da Whalepédia.
 O projeto também contará com 1 documento XML e seu respetivo schema para validação, o qual deverá estar integrado de forma orgânica parcialmente, ou em sua totalidade, com pelo menos uma das páginas HTML utilizando a linguagem de programação Javascript e CSS. O projeto obedecerá aos requisitos mínimos previstos no critério avaliativo. 
 
 Página inicial (index): https://tiwm22-ti-g04.netlify.app/index.html
+
 Página Espécies: https://tiwm22-ti-g04.netlify.app/pages/especies.html
+
 Página Alimentação: https://tiwm22-ti-g04.netlify.app/pages/alimentacao.html
+
 Página Reprodução: https://tiwm22-ti-g04.netlify.app/pages/reproducao.html
+
 Página Curiosidades: https://tiwm22-ti-g04.netlify.app/pages/curiosidades.html
 
 
