@@ -157,6 +157,16 @@ box-shadow: rgba(234, 234, 238, 0.35) 0px 5px 15px;;
   }
 
 
+h1#topo {
+	width: 500px;
+	height: 290px;
+	background-image: url(../images/respiração_baleias.png);
+	}
+h1#topo span {
+	display: none;
+	}
+
+
 strong {
     color: #003477;
     text-shadow: rgba(170, 170, 170, 0.671) 1px 1px 1px;
@@ -164,7 +174,7 @@ strong {
 
 footer {
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #003477;
     font-size: smaller;
 }
 
