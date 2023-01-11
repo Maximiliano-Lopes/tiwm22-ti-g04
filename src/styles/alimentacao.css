@@ -349,6 +349,7 @@ box-shadow: rgba(234, 234, 238, 0.35) 0px 5px 15px;;
     }
   }
   
+  
   .slider:hover::after{
     content: "⇩";
     position: absolute;

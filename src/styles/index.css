@@ -25,6 +25,7 @@ nav {
   display: inline-flex;
   flex-direction: row;
   width: 100%;
+  float: left;
 }
 
 nav ul {
@@ -68,7 +69,6 @@ nav li {
   font-weight: 800;
   letter-spacing: -1px;
   color: #0d4691;
-  
 }
 .links {
   font-weight: 800;
@@ -136,26 +136,26 @@ nav li {
 }
 
 #myBtn {
-  display: none; 
-  position: fixed; 
-  bottom: 20px; 
-  right: 30px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: rgba(95, 181, 202, 0.267); 
-  color: white; 
-  cursor: pointer; 
-  padding: 15px; 
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(95, 181, 202, 0.267);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
   border-radius: 10px;
-  font-size: 18px; 
-  -webkit-box-shadow: 6px 4px 5px 0px rgba(223,231,237,1);
--moz-box-shadow: 6px 4px 5px 0px rgb(183, 213, 236);
-box-shadow: rgba(234, 234, 238, 0.35) 0px 5px 15px;;
+  font-size: 18px;
+  -webkit-box-shadow: 6px 4px 5px 0px rgba(223, 231, 237, 1);
+  -moz-box-shadow: 6px 4px 5px 0px rgb(183, 213, 236);
+  box-shadow: rgba(234, 234, 238, 0.35) 0px 5px 15px;
 }
 
 #myBtn:hover {
-  background-color: rgba(231, 237, 241, 0); 
+  background-color: rgba(231, 237, 241, 0);
 }
 
 strong {
@@ -165,53 +165,53 @@ strong {
 
 @-webkit-keyframes bloob {
   0% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 
   50% {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
   }
 
   100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 }
 
 @keyframes bloob {
   0% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 
   50% {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
   }
 
   100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 }
 
 @-webkit-keyframes bloob-float {
   100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-      -webkit-transform: translatex(-50px);
-      transform: translatex(-50px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-transform: translatex(-50px);
+    transform: translatex(-50px);
   }
 }
 
 @keyframes bloob-float {
   100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-      -webkit-transform: translatex(-50px);
-      transform: translatex(-50px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-transform: translatex(-50px);
+    transform: translatex(-50px);
   }
 }
 
@@ -271,7 +271,8 @@ strong {
   animation: go-back 5s infinite alternate;
 }
 
-.slide p, .slide li {
+.slide p,
+.slide li {
   font-size: 18pt;
   text-align: justify;
 }
@@ -298,27 +299,27 @@ strong {
   background-color: #05d5fe;
 }
 
-#radio1:checked~.first h2 {
+#radio1:checked ~ .first h2 {
   font-weight: bolder;
   color: #002658;
   text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
 }
 
-#radio1:checked~.first {
+#radio1:checked ~ .first {
   transition: all 2s;
 }
 
-#radio2:checked~.first {
+#radio2:checked ~ .first {
   margin-left: -30%;
   transition: all 2s;
 }
 
-#radio3:checked~.first {
+#radio3:checked ~ .first {
   margin-left: -65%;
   transition: all 2s;
 }
 
-#radio4:checked~.first {
+#radio4:checked ~ .first {
   margin-left: -103%;
   transition: all 2s;
 }
@@ -333,25 +334,33 @@ strong {
 
 @keyframes go-back {
   from {
-      transform: translateX(10px);
-      transform: translateY(10px);
-      transform: rotate(10deg);
+    transform: translateX(10px);
+    transform: translateY(10px);
+    transform: rotate(10deg);
   }
 
   to {
-      transform: translateX(0);
-      transform: translateY(0);
-      transform: rotate(-10deg);
+    transform: translateX(0);
+    transform: translateY(0);
+    transform: rotate(-10deg);
   }
 }
-footer{
+footer {
   width: 100vw;
   background-color: rgba(240, 248, 255, 0.841);
   align-items: center;
   text-align: center;
   position: absolute;
-  margin-top: 100%;
+
   padding: 1.5vw;
+}
+article{
+  align-items: center;
+  text-align: left;
+  width: 50vw;
+  display: block;
+  position: absolute;
+  flex-direction: column;
 }
 /* Extra large devices (large laptops and desktops, 1290px and up) */
 @media only screen and (min-width: 1290px) {
@@ -367,139 +376,149 @@ footer{
     font-weight: 800;
     letter-spacing: -1px;
     color: #0d4691;
-    
   }
-  .first{
+  .first {
     font-size: 23pt;
     text-align: justify;
   }
-  form{
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     position: absolute;
-    margin-top: 65%;
+    margin-top: 150%;
     width: 50vw;
   }
-  form input{
+  form input {
     width: 35%;
     background-color: rgba(255, 255, 255, 0.616);
     border: none;
     border-radius: 20px;
     margin-top: 1%;
   }
-  textarea{
+  textarea {
     color: #002658;
     background-color: rgba(255, 255, 255, 0.616);
     border-radius: 10px;
   }
-  form h1{
+  form h1 {
     color: white;
   }
-  form label{
+  form label {
     color: rgb(255, 255, 255);
-    
   }
-  #file{
+  #file {
     color: white;
-    
   }
-  #btnsubmit{
+  #btnsubmit {
     margin-bottom: 10%;
+  }
+  footer {
+    margin-top: 90%;
+  }
+  article{
+    background-color: rgba(255, 255, 255, 0.585);
+    padding: 1vw;
+    border-radius: 10px;
+    margin-top: 80%;
+  }
+  #perguntasFrequentes{
+    position: absolute;
+    margin-top: 180%;
+    margin-left: -15%;
   }
 }
 /* Medium devices (landscape tablets, 768px and down)
 See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
 @media screen and (max-width: 768px) {
   main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
   }
 
   nav {
-      width: 100vw;
-      display: inline-flex;
-      flex-direction: column;
-      margin: 2vw 0 8vw 0;
+    width: 100vw;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 2vw 0 8vw 0;
   }
 
   nav li {
-      margin-right: 0;
+    margin-right: 0;
   }
 
   nav ul {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
-      list-style: none;
-      align-items: center;
-      padding-inline-start: 0;
-      margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    padding-inline-start: 0;
+    margin: 0;
 
-      -webkit-animation-name: bob-float, bloob;
-      animation-name: bob-float, bloob;
-      -webkit-animation-duration: 0.3s, 1.5s;
-      animation-duration: 0.2s, 3s;
-      -webkit-animation-delay: 0s, 0.3s;
-      animation-delay: 0s, 0.3s;
-      -webkit-animation-timing-function: ease-out, ease-in-out;
-      animation-timing-function: ease-out, ease-in-out;
-      -webkit-animation-iteration-count: 1, infinite;
-      animation-iteration-count: 1, infinite;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-direction: normal, alternate;
-      animation-direction: normal, alternate;
+    -webkit-animation-name: bob-float, bloob;
+    animation-name: bob-float, bloob;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.2s, 3s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
   }
 
   #LogoImg {
-      display: block;
-      margin-left: 0;
-      margin-right: 0;
-      flex-direction: column;
-      max-width: min-content;
-      align-items: center;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    max-width: min-content;
+    align-items: center;
   }
 
   #LogoImg img {
-      max-width: 250px;
+    max-width: 250px;
   }
 
   #CardArea {
-      max-width: 450px;
-      width: 65vw;
-      background-color: rgba(255, 255, 255, 0.103);
-      padding: 5px 20px 0px 20px;
-      border-radius: 30px;
-      margin-right: 0;
-      margin-bottom: 10vh;
+    max-width: 450px;
+    width: 65vw;
+    background-color: rgba(255, 255, 255, 0.103);
+    padding: 5px 20px 0px 20px;
+    border-radius: 30px;
+    margin-right: 0;
+    margin-bottom: 10vh;
   }
 
   #CardArea p {
-      font-size: 18pt;
-      font-weight: bolder;
-      text-align: justify;
-      text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+    font-size: 18pt;
+    font-weight: bolder;
+    text-align: justify;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
   }
 
   #CardArea span {
-      width: 100em;
-      margin-top: -10%;
-      position: absolute;
-      font-weight: bolder;
-      font-size: 18pt;
-      text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
+    width: 100em;
+    margin-top: -10%;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 18pt;
+    text-shadow: rgba(255, 255, 255, 0.671) 1px 1px 1px;
   }
 
   #CardArea h1 {
-      font-size: 20pt;
-      font-weight: bolder;
-      text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
+    font-size: 20pt;
+    font-weight: bolder;
+    text-shadow: rgba(255, 255, 255, 0.671) 3px 1.5px 1px;
   }
   #BotaoBaleiaAzul {
     background-color: rgba(255, 255, 255, 0.701);
@@ -508,72 +527,82 @@ See https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
     padding: 5px 10px;
     font-size: 15pt;
     margin-left: 0;
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-decoration: none;
     font-weight: 800;
     letter-spacing: -1px;
     color: #0d4691;
-    
   }
   .slider {
-  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-  
+
     width: 65vw;
     height: 30vh;
-}
-.first{
-  font-size: 0.9rem;
-  padding-bottom: 15%;
-  padding-top: 0;
-  text-align: justify;
-}
-.first h1{
-  margin-top: -0%;
-  overflow-y: hidden;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  position: absolute;
-  margin-top: 330%;
-  width: 60vw;
-}
-form input{
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.616);
-  border: none;
-  border-radius: 20px;
-  margin-top: 5%;
-}
-textarea{
-  color: #002658;
-  font-size: 12pt;
-  background-color: rgba(255, 255, 255, 0.616);
-  border-radius: 10px;
-}
-form h1{
-  color: white;
-}
-form label{
-  color: rgb(255, 255, 255);
-  
-}
-#file{
-  color: white;
-  
-}
-#btnsubmit{
-  margin-bottom: 20%;
-}
+  }
+  .first {
+    font-size: 0.9rem;
+    padding-bottom: 15%;
+    padding-top: 0;
+    text-align: justify;
+  }
+  .first h1 {
+    margin-top: -0%;
+    overflow-y: hidden;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 260rem;
+    width: 60vw;
+  }
+  form input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: none;
+    border-radius: 20px;
+    margin-top: 5%;
+  }
+  textarea {
+    color: #002658;
+    font-size: 12pt;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 10px;
+  }
+  form h1 {
+    color: white;
+  }
+  form label {
+    color: rgb(255, 255, 255);
+  }
+  #file {
+    color: white;
+  }
+  #btnsubmit {
+    margin-bottom: 20%;
+  }
+  footer {
+    margin-top: 520%;
+  }
+  article{
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.585);
+    padding: 1vw;
+    border-radius: 10px;
+    margin-top: 260vh;
+  }
+  #perguntasFrequentes{
+    position: absolute;
+    margin-top: 300em;
+    margin-left: 5%;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and max 1200px) */
-@media only screen and (min-width: 768px) and (max-width: 1290px){
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
   #BotaoBaleiaAzul {
     background-color: rgba(255, 255, 255, 0.701);
     position: absolute;
@@ -586,27 +615,25 @@ form label{
     font-weight: 800;
     letter-spacing: -1px;
     color: #0d4691;
-
   }
-  .first{
+  .first {
     font-size: 1.7rem;
     padding-bottom: 15%;
     padding-top: 0;
     text-align: justify;
   }
-  .first h1{
+  .first h1 {
     margin-top: -4%;
   }
-  form{
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     position: absolute;
     margin-top: 100%;
     width: 60vw;
   }
-  form input{
+  form input {
     width: 50%;
     font-size: 18pt;
     background-color: rgba(255, 255, 255, 0.616);
@@ -614,24 +641,26 @@ form label{
     border-radius: 20px;
     margin-top: 5%;
   }
-  textarea{
+  textarea {
     color: #002658;
     font-size: 18pt;
     background-color: rgba(255, 255, 255, 0.616);
     border-radius: 10px;
   }
-  form h1{
+  form h1 {
     color: white;
   }
-  form label{
+  form label {
     color: rgb(255, 255, 255);
     font-size: 18pt;
   }
-  #file{
+  #file {
     color: white;
-    
   }
-  #btnsubmit{
+  #btnsubmit {
     margin-bottom: 20%;
+  }
+  footer {
+    margin-top: 50%;
   }
 }
